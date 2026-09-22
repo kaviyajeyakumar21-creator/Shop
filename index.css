@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: block;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-size: large;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link.active {
+  font-weight: bold;
+}
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+.mobileMenu {
+  display: none;
+}
+.mobileMenu.open {
+  display: block;
+}
+.mobileMenu ul {
+  list-style: none;
+  gap: 15px;
+  width: 100%;
+  text-align: center;
+}
+.mobileMenu ul li {
+  padding: 10px;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: full;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 0 0 3px #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+}
+.card-image img {
+  width: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-body .price {
+  font-weight: bolder;
+  font-size: larger;
+}
+.card-body button {
+  padding: 12px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: hsl(223, 93%, 56%);
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
